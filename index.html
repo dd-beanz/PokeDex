@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>PokeDev</title>
+    <link href="./animate.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:300" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
+  </head>
+  <body>
+    <div class="row fill">
+      <div class="col s3 sideBar">
+        <div class="row">
+          <div id="pokeInput"></div>
+        </div>
+        <div class="row">
+          <div id="sprite"></div>
+        </div>
+        <div class="row">
+          <div id="name"></div>
+          <div id="height"></div>
+          <div id="weight"></div>
+        </div>
+      </div>
+      <div class="col s9 mainContent">
+        <!--<div class="row">-->
+          <h3>Abilities</h3>
+        <!--</div>-->
+        <!--<div class="row">-->
+          <ul id="attributes"></ul>
+        <!--</div>-->
+          <h3>Poke Stats</h3>
+
+          <ul id="statistics"></ul>
+      </div>
+    </div>
+    <div class="footer">
+        <p>Copyright 2017 - DB</p>
+        <a href="https://github.com/dd-beanz">Github
+        </a>
+    </div>
+    <script src="./index.js"></script>
+    <style>
+      #height{
+        text-align: center;
+      }
+      #weight{
+        text-align: center;
+      }
+      #attributes{
+        text-align: center;
+        font-size: 20px;
+      }
+      html{
+        background-color: #F2FDF7;
+      }
+      input{
+        text-align: center;
+        font-size: 40px;
+      }
+      #name{
+        font-family: 'Quicksand', sans-serif!important;
+        text-align: center;
+        font-weight: 100!important;
+      }
+      #sprite img{
+        height: 200px;
+        width: 200px;
+
+      }
+      .sideBar{
+
+        top:0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        background-color: #BBCCBE;
+        display: flex;
+        flex-direction: column;
+      }
+      .mainContent{
+        top:0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        display: flex;
+        flex-direction: column;
+        background-color: #F1FFFB;
+        text-align: center;
+        font-family: 'Quicksand', sans-serif;
+      }
+      .fill{
+        min-height: 100vh;
+        display: flex;
+        flex-direction: row;
+      }
+      .footer{
+        color: rgb(92, 92, 92);
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        padding: 1rem;
+        background-color: #F2FDF7;
+        text-align: center;
+      }
+
+    </style>
+  </body>
+</html>

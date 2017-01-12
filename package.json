@@ -1,0 +1,14 @@
+{
+  "name": "pokedex",
+  "version": "0.0.1",
+  "description": "A small PokeDex utilizing the PokeAPI",
+  "main": "index.js",
+  "scripts": {
+    "test": "LOL nope"
+  },
+  "author": "dd-beanz",
+  "license": "MIT",
+  "dependencies": {
+    "semantic-ui": "^2.2.7"
+  }
+}
