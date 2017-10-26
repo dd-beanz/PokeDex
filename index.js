@@ -11,7 +11,7 @@ let poke = '1'
 let pokeListAbilities = ''
 let pokeListStats = ''
 
-let endpoint = `http://pokeapi.co/api/v2/pokemon/${poke}/`
+let endpoint = `https://pokeapi.co/api/v2/pokemon/${poke}/`
 
 
 fetch(endpoint).then(blob => blob.json()).then(data =>{
@@ -21,7 +21,7 @@ fetch(endpoint).then(blob => blob.json()).then(data =>{
 
   pokePick.addEventListener('keydown', (e) =>{
     if(e.keyCode == 13){
-        endpoint = `http://pokeapi.co/api/v2/pokemon/${e.path[0].value}/`
+        endpoint = `https://pokeapi.co/api/v2/pokemon/${e.path[0].value}/`
         fetch(endpoint).then(blob => blob.json()).then(data =>{
           console.log(data)
           pokeListStats = ''
@@ -53,6 +53,6 @@ fetch(endpoint).then(blob => blob.json()).then(data =>{
     })
   })
 
-  const stat = `http://pokeapi.co/api/v2/stat/4/`
+  const stat = `https://pokeapi.co/api/v2/stat/4/`
 
   fetch(stat).then(blob => blob.json()).then(data => console.log(data))
